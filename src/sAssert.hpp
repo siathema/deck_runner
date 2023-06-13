@@ -17,7 +17,7 @@
 
 #define s_debug(fmt, ...) fprintf(stderr, "%s:%d: " fmt "\n", __func__, __LINE__, __VA_ARGS__)
 
-inline void s_assert(bool x, const char* reason)
+inline void s_assert(bool x, const char* reason = 0)
 {
 	if (!x)
 	{

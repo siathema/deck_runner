@@ -2,10 +2,9 @@
 
 #include <mutex>
 #include <atomic>
-#include "renderer.hpp"
-#include "ui.hpp"
+#include "render/renderer.hpp"
+#include "render/ui.hpp"
 #include "game.hpp"
-#include "voxel.hpp"
 
 
 
@@ -21,7 +20,6 @@ namespace SMOBA
         ViewportInfo* Viewport;
         UI_Context* UiContext;
         Camera* Cams;
-        Voxel_World* VoxelWorld;
 
         inline Sync(): Mutex(), Running(), UpdateLoop(true)
         {

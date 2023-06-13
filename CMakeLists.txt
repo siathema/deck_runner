@@ -19,14 +19,13 @@ else() #MSVC
 endif()
 
 set(SOURCES
-	src/platform_sdl.cpp
-	src/renderer.cpp
-	src/assets.cpp
-    src/mesh.cpp
+	src/platform/platform_sdl.cpp
+	src/platform/renderer.cpp
+	src/assets/assets.cpp
+    src/render/mesh.cpp
 	src/camera.cpp
 	src/sMath.cpp
-    src/voxel.cpp
-    src/ui.cpp
+    src/render/ui.cpp
     src/shared.cpp)
 
 add_executable(client ${SOURCES})
